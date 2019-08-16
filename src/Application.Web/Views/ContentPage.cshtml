@@ -3,3 +3,9 @@
 @{
 	Layout = "baseLayout.cshtml";
 }
+
+@foreach(var item in Model.Contents){
+<text>
+ @Html.Raw(item.ContentBody)
+</text>
+}

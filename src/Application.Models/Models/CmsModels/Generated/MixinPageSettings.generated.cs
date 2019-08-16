@@ -24,9 +24,17 @@ namespace Application.Models.Models.CmsModels
 	/// <summary>Page Settings</summary>
 	public partial interface IMixinPageSettings : IPublishedContent
 	{
+		/// <summary>Contents</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		IEnumerable<ContentItem> Contents { get; }
+
 		/// <summary>Page Settings</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
 		IEnumerable<IPublishedElement> PageSettings { get; }
+
+		/// <summary>URL</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		string UmbracoUrlName { get; }
 	}
 
 	/// <summary>Page Settings</summary>
@@ -55,6 +63,17 @@ namespace Application.Models.Models.CmsModels
 		// properties
 
 		///<summary>
+		/// Contents
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("contents")]
+		public IEnumerable<ContentItem> Contents => GetContents(this);
+
+		/// <summary>Static getter for Contents</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		public static IEnumerable<ContentItem> GetContents(IMixinPageSettings that) => that.Value<IEnumerable<ContentItem>>("contents");
+
+		///<summary>
 		/// Page Settings
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
@@ -64,5 +83,16 @@ namespace Application.Models.Models.CmsModels
 		/// <summary>Static getter for Page Settings</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
 		public static IEnumerable<IPublishedElement> GetPageSettings(IMixinPageSettings that) => that.Value<IEnumerable<IPublishedElement>>("pageSettings");
+
+		///<summary>
+		/// URL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("umbracoUrlName")]
+		public string UmbracoUrlName => GetUmbracoUrlName(this);
+
+		/// <summary>Static getter for URL</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		public static string GetUmbracoUrlName(IMixinPageSettings that) => that.Value<string>("umbracoUrlName");
 	}
 }

@@ -81,11 +81,18 @@ namespace Application.Models.Models.CmsModels
 		public string MetaTitle => this.Value<string>("metaTitle");
 
 		///<summary>
-		/// SEO Frequency: For Sitemap.xml Default: monthly
+		/// NoFollow
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
-		[ImplementPropertyType("seoFrequency")]
-		public string SeoFrequency => this.Value<string>("seoFrequency");
+		[ImplementPropertyType("noFollow")]
+		public bool NoFollow => this.Value<bool>("noFollow");
+
+		///<summary>
+		/// NoIndex
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("noIndex")]
+		public bool NoIndex => this.Value<bool>("noIndex");
 
 		///<summary>
 		/// SEO Priority: For Sitemap.xml Default: 0.5

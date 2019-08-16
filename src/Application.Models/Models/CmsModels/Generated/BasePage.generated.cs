@@ -46,10 +46,24 @@ namespace Application.Models.Models.CmsModels
 		// properties
 
 		///<summary>
+		/// Contents
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("contents")]
+		public IEnumerable<ContentItem> Contents => MixinPageSettings.GetContents(this);
+
+		///<summary>
 		/// Page Settings
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
 		[ImplementPropertyType("pageSettings")]
 		public IEnumerable<IPublishedElement> PageSettings => MixinPageSettings.GetPageSettings(this);
+
+		///<summary>
+		/// URL
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.0")]
+		[ImplementPropertyType("umbracoUrlName")]
+		public string UmbracoUrlName => MixinPageSettings.GetUmbracoUrlName(this);
 	}
 }

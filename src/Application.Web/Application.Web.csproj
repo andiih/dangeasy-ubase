@@ -500,6 +500,7 @@
     <Content Include="Views\RobotsTxt.cshtml" />
     <Content Include="Views\SitemapXml.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\ContentPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

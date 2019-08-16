@@ -369,6 +369,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\CmsModels\Generated\BasePage.generated.cs" />
+    <Compile Include="Models\CmsModels\Generated\ContentItem.generated.cs" />
     <Compile Include="Models\CmsModels\Generated\ContentPage.generated.cs" />
     <Compile Include="Models\CmsModels\Generated\ElementScriptSettings.generated.cs" />
     <Compile Include="Models\CmsModels\Generated\ElementSeoSettings.generated.cs" />
@@ -380,6 +381,7 @@
     <Compile Include="Models\CmsModels\Generated\Image.generated.cs" />
     <Compile Include="Models\CmsModels\Generated\Member.generated.cs" />
     <Compile Include="Models\CmsModels\Generated\MixinPageSettings.generated.cs" />
+    <Compile Include="Models\CmsModels\Generated\PageControls.generated.cs" />
     <Compile Include="Models\CmsModels\Generated\RepositoryContainer.generated.cs" />
     <Compile Include="Models\CmsModels\Generated\Site.generated.cs" />
     <Compile Include="Models\CmsModels\Generated\SiteContainer.generated.cs" />
